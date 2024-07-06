@@ -52,6 +52,7 @@ export const ArticleParamsForm = (props: ArticleFormProps) => {
 	function handleReset(evt: FormEvent<HTMLFormElement>): void {
 		evt.preventDefault();
 		setIsSelect(defaultArticleState);
+		setArticleState(defaultArticleState);
 	}
 
 	function handleSubmit(evt: FormEvent<HTMLFormElement>): void {
